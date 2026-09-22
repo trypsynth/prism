@@ -10,6 +10,7 @@ public final class PrismInitProvider extends ContentProvider {
   @Override
   public boolean onCreate() {
     PrismContext.set(getContext());
+    System.loadLibrary("prism");
     return true;
   }
 
